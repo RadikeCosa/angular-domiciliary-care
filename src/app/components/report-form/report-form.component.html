@@ -1,0 +1,66 @@
+<main>
+  <form action="">
+    <h1>Daily Report</h1>
+    <div>
+      <label
+        >Patient:
+        <input list="patient" name="patient" />
+      </label>
+      <datalist id="patient">
+        <option value="Marie Curie"></option>
+        <option value="Isaac Newton"></option>
+        <option value="Albert Einstein"></option>
+        <option value="Stephen Hawking"></option>
+        <option value="Ada Lovelace"></option>
+      </datalist>
+    </div>
+    <div>
+      <!-- TODO Buscar formato (UX) // que inicie con la fecha actual seleccionada    -->
+      <label for="date">Date</label>
+      <input type="date" id="date" />
+    </div>
+    <div class="vitalSignsReport">
+      <div>
+        <!-- TODO Agregar validacion por minimo y maximo -->
+        <label for="heartRate">Heart Rate</label>
+        <input type="number" id="heartRate" name="heartRate" />
+      </div>
+
+      <div>
+        <!-- TODO Agregar validacion por minimo y maximo -->
+        <label for="respiratoryRate">Respiratory Rate</label>
+        <input type="number" id="respiratoryRate" name="respiratoryRate" />
+      </div>
+
+      <div>
+        Blood Pressure
+        <div>
+          <!-- TODO Agregar validacion por minimo y maximo -->
+          <label for="sistolic">Sistolic</label>
+          <input type="number" name="sistolic" id="sistolic" />
+          <label for="diastolic">Diastolic</label>
+          <input type="number" name="diastolic" id="diastolic" />
+        </div>
+      </div>
+
+      <div>
+        <!-- TODO Validar min y max -->
+        <label for="oxigenSaturation">Oxigen Saturation</label>
+        <input type="number" id="oxigenSaturation" name="oxigenSaturation" />
+      </div>
+
+      <div>
+        <!-- TODO Agregar validacion por minimo y maximo -->
+        <label for="temperature">temperature</label>
+        <input type="number" id="temperature" name="temperature" />
+      </div>
+
+      <div>
+        <label for="diuresis">Diuresis</label>
+        <input type="checkbox" id="diuresis" name="diuresis" />
+        <label for="catarsis">Catarsis</label>
+        <input type="checkbox" id="diuresis" name="catarsis" />
+      </div>
+    </div>
+  </form>
+</main>
