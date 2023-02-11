@@ -1,0 +1,60 @@
+<fieldset>
+  <legend>Report</legend>
+  <div>
+    <textarea
+      name="register"
+      [(ngModel)]="report.register"
+      placeholder="Write what you do"
+    ></textarea>
+  </div>
+</fieldset>
+
+<fieldset>
+  <legend>Medication Chart</legend>
+  <div>
+    <label for="medication">Medication:</label>
+    <input
+      type="text"
+      id="medication"
+      name="medication"
+      [(ngModel)]="medicationChart.medication"
+    />
+  </div>
+  <div>
+    <label for="dose">Dose:</label>
+    <input
+      type="number"
+      id="dose"
+      name="dose"
+      [(ngModel)]="medicationChart.dose"
+    />
+  </div>
+  <div>
+    <label for="unit">Unit:</label>
+    <select id="unit" name="unit" [(ngModel)]="medicationChart.unit">
+      <option value="grams">Grams</option>
+      <option value="miligrams">Miligrams</option>
+      <option value="drops">Drops</option>
+      <option value="cc">cc</option>
+    </select>
+  </div>
+  <div>
+    <label for="frequency">Frequency (hours):</label>
+    <input
+      type="number"
+      id="frequency"
+      name="frequency"
+      [(ngModel)]="medicationChart.frequency"
+    />
+  </div>
+  <div>
+    <label for="route">Route:</label>
+    <select id="route" name="route" [(ngModel)]="medicationChart.route">
+      <option value="oral">Oral</option>
+      <option value="ev">EV</option>
+      <option value="sc">SC</option>
+      <option value="im">IM</option>
+      <option value="topical">Topical</option>
+    </select>
+  </div>
+</fieldset>

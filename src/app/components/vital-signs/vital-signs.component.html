@@ -1,0 +1,43 @@
+<fieldset>
+  <legend>Vital Signs Report</legend>
+  <div>
+    <label for="heartRate">Heart Rate:</label>
+    <input type="number" id="heartRate" name="heartRate" />
+
+    <label for="respiratoryRate">Respiratory Rate:</label>
+    <input type="number" id="respiratoryRate" name="respiratoryRate" />
+  </div>
+
+  <div>
+    Blood Pressure:
+    <!-- TODO Agregar validacion por minimo y maximo -->
+    <label for="systolic">Sistolic</label>
+    <input type="number" name="systolic" [(ngModel)]="bloodPressure.systolic" />
+    <label for="diastolic">Diastolic</label>
+    <input
+      type="number"
+      name="diastolic"
+      [(ngModel)]="bloodPressure.diastolic"
+    />
+  </div>
+
+  <div>
+    <label for="oxigenSaturation">Oxigen Saturation:</label>
+    <input type="number" id="oxigenSaturation" name="oxigenSaturation" />
+
+    <label for="temperature">Temperature:</label>
+    <input type="number" id="temperature" name="temperature" />
+  </div>
+
+  <div>
+    <label for="catarsis">
+      <input type="checkbox" id="catarsis" name="catarsis" value="catarsis" />
+      Catarsis
+    </label>
+
+    <label for="diuresis">
+      <input type="checkbox" id="diuresis" name="diuresis" value="diuresis" />
+      Diuresis
+    </label>
+  </div>
+</fieldset>
