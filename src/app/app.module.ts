@@ -7,12 +7,11 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ReportFormComponent } from './components/report-form/report-form.component';
-import { VitalSignsComponent } from './components/vital-signs/vital-signs.component';
-import { ReportComponent } from './components/report/report.component';
 
 @NgModule({
-  declarations: [AppComponent, ReportFormComponent, VitalSignsComponent, ReportComponent],
+  declarations: [],
+  providers: [],
+  bootstrap: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -22,7 +21,5 @@ import { ReportComponent } from './components/report/report.component';
     MatSlideToggleModule,
     MatFormFieldModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent],
 })
 export class AppModule {}
